@@ -1,0 +1,32 @@
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Cafe24Ssurround';
+
+
+  cursor: url("data:image/svg+xml;utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'>\
+    <defs>\
+      <filter id='neon' x='-50%' y='-50%' width='200%' height='200%'>\
+        <feDropShadow dx='0' dy='0' stdDeviation='2' flood-color='%2300ffff' flood-opacity='1'/>\
+        <feDropShadow dx='0' dy='0' stdDeviation='5' flood-color='%2300ffff' flood-opacity='0.7'/>\
+      </filter>\
+    </defs>\
+    <path d='M10 10 L10 38 L38 24 Z' fill='none' stroke='%2300ffff' stroke-width='2' filter='url(%23neon)'/>\
+  </svg>") 16 0, auto;
+  
+  
+}
+/* @font-face {
+  font-family: 'Ownglyph_ParkDaHyun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

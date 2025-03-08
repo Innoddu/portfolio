@@ -1,0 +1,58 @@
+.navbar-custom {
+    position: fixed;  
+    overflow: hidden;
+    height: 80px;
+    display: flex;
+    background: #000;
+    box-shadow: 0 0 10px rgba(210, 180, 140, 0.5); 
+    border-bottom: 1px solid rgb(39, 16, 98); 
+    perspective: 1000px; 
+
+}
+
+.navbar-custom::before {
+  content: "";
+  position: absolute; 
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgb(18, 30, 203) 0deg,
+    rgb(38, 41, 180) 60deg,
+    rgb(131, 141, 207) 120deg,
+    rgb(164, 150, 210) 180deg,
+    rgb(86, 23, 129) 240deg,
+    #290544 300deg,
+    rgb(0, 5, 10) 360deg
+  );
+  animation: neon-rotate 0.5s linear infinite; 
+  opacity: 0.3;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+
+.navbar-custom .nav-link {
+    color: #f4f4f4; 
+    text-shadow: 
+    0 0 3px #3c22e5,
+    0 0 6px #060449,
+    0 0 15px #525084,
+    0 0 20px #d2d2dd;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+  }
+  
+.navbar-custom .nav-link:hover {
+  transform: translate(5px, -5px) translateZ(20px);
+  color: whitesmoke; 
+  text-shadow: 
+  0 0 3px #342d5b,
+  0 0 6px #9494b9,
+  0 0 15px #818090,
+  0 0 20px #e5e5f6;
+}
+

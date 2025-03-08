@@ -1,0 +1,53 @@
+
+  .slide1-video{
+    background-color: rgb(1, 255, 128);
+    color: #fff;
+    height: auto;
+  }
+  
+  .slide2-video{
+    background-color: rgb(111, 255, 0);
+    color: #fff;
+    height: auto;
+  }
+  
+  .slide3 {
+    background-color: rgb(0, 255, 145);
+    color: #fff;
+    height: auto;
+  }
+  
+  .slide4 {
+    background-color: #ccc;
+    color: #333;
+    height: auto;
+  }
+
+
+  .slideCommon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -150px;  
+    background-color: rgb(221, 221, 221);
+    border: 15px solid rgb(146, 144, 207); 
+    border-radius: 15px; 
+    overflow: hidden;
+    
+    box-shadow:
+        0 0 5px rgb(93, 113, 203),
+        0 0 10px rgb(131, 154, 207),
+        0 0 20px rgb(85, 41, 120);
+
+    cursor: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'>\
+      <defs>\
+        <filter id='neon' x='-50%' y='-50%' width='200%' height='200%'>\
+          <feDropShadow dx='0' dy='0' stdDeviation='2' flood-color='%23000080' flood-opacity='1'/>\
+          <feDropShadow dx='0' dy='0' stdDeviation='5' flood-color='%23000080' flood-opacity='0.7'/>\
+        </filter>\
+      </defs>\
+      <path d='M10 10 L10 38 L38 24 Z' fill='none' stroke='%23000080' stroke-width='2' filter='url(%23neon)'/>\
+    </svg>") 16 0, auto !important; 
+  }
+

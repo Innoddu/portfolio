@@ -1,0 +1,212 @@
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    position: relative;
+    
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+      from 0deg at 50% 50%,
+      rgb(69, 85, 233) 0deg,
+      rgb(34, 21, 132) 60deg,
+      rgb(128, 110, 200) 120deg,
+      rgb(49, 19, 146) 180deg,
+      rgba(61, 25, 180, 0.286) 240deg,
+      rgb(149, 143, 175) 300deg,
+      rgb(39, 24, 39) 360deg
+    );
+    opacity: 0.3;
+    filter: blur(200px);
+    z-index: -1;
+    font-family: 'GmarketSansMedium';
+  }
+
+
+
+
+
+.neon-head {
+    font-family: 'GmarketSansMedium';
+    color: #ffffff; 
+    text-shadow: 
+    0 0 3px #1b06a3,
+    0 0 6px #7e7c98,
+    0 0 15px #c5c5c6;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    
+}
+
+.aboutme-paragraph {
+    font-family: 'GmarketSansMedium';
+    color: #ffffff; 
+    padding-top: 20px;
+    
+}
+
+.custom-underline {
+    position: relative; 
+    display: inline-block; 
+}
+  
+.custom-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -15%; 
+    left: 35%;
+    right: 35%; 
+    border-bottom: 4px solid #c5c5c6; 
+    box-shadow: 0 0 10px #c5c5c6; 
+}
+
+
+.education-container {
+ margin-top:  70px;
+}
+
+.edu-sub-container {
+    font-family: 'GmarketSansMedium';
+    color: #ffffff; 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    margin-top: 50px;
+    align-items: center;  
+    row-gap: 50px;
+
+}
+.smc-container {
+    display: grid;
+    grid-template-columns: 50px 150px 300px 500px; 
+    flex-direction: row;
+    align-items: center;  
+    gap: 50px;  
+    width: 100%;  
+   
+}
+.smc-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    width: 100%; 
+    line-height: 30px;
+
+}
+
+.ucb-container {
+    display: grid;
+    grid-template-columns: 50px 150px 300px 500px; 
+    flex-direction: row;
+    align-items: center;  
+    gap: 50px;  
+    width: 100%;
+}
+
+.ucb-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    width: 100%;  
+    line-height: 30px;
+    
+}
+
+
+.skills-container {
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-sub-container {
+    margin-top: -500px;
+}
+.cs-head-neon {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    text-shadow:
+    0 0 5px rgb(110, 233, 132),
+    0 0 10px rgb(93, 134, 99);
+}
+.ds-head-neon {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    text-shadow: 
+      0 0 5px #00bfff,
+      0 0 10px #00bfff;
+}
+
+.cs-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+.cs-skill-bubble {
+    padding: 10px 20px;
+    border: 1px solid #71e77d; 
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    text-shadow: 
+    0 0 5px rgb(57, 210, 85),
+    0 0 10px rgb(27, 93, 37);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+.cs-skill-bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 
+    0 0 5px rgb(57, 210, 85),
+    0 0 10px rgb(27, 93, 37);
+  }
+
+.ds-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+.ds-skill-bubble {
+    padding: 10px 20px;
+    border: 2px solid #75bce0;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    text-shadow: 
+      0 0 5px #00bfff,
+      0 0 10px #00bfff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+.ds-skill-bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 
+      0 0 10px #00bfff,
+      0 0 20px #00bfff;
+  }
