@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,  } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -7,7 +7,7 @@ import '../styles/Projects.css';
 import Carousel from "react-spring-3d-carousel";
 import { slidesData } from "../components/Card"
 import { config } from "react-spring";
-import { faReact, faHtml5, faCss, faNodeJs, faGithub, faJava, faPython} from '@fortawesome/free-brands-svg-icons';
+import { faReact, faHtml5, faCss, faNodeJs, faGithub, faJava,} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -25,7 +25,7 @@ export function Projects() {
           }
         };
       });
-      
+
       // Auto Slide
       // useEffect(() => {
       //   const timer = setInterval(() => {
