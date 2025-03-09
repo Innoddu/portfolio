@@ -5,7 +5,7 @@ import smc_logo from "../assets/logos/SMClogoRxblue10-Photoroom.png";
 
 export function Aboutme() {
     return (
-        <Container fluid id="aboutme" className="min-vh-100" >
+        <Container fluid id="aboutme" className="aboutme min-vh-100" >
             <Container className="text-center d-flex flex-column align-items-center" style={{paddingTop: '120px'}}>
                 <h2 className="display-6 neon-head custom-underline " style={{ letterSpacing: '5px'}}>
                     About Me
@@ -109,4 +109,4 @@ export function Aboutme() {
                 </Container>
         </Container>
       );
-}
+    }

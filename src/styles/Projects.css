@@ -1,14 +1,199 @@
 
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-.proj-title {
-    color: rgb(35, 142, 219);
-    font-family: 'GmarketSansMedium';
-    text-shadow:
-      0 0 5px rgba(185, 168, 168, 0.7),
-      0 0 10px rgba(231, 217, 217, 0.5),
-      0 0 20px rgba(27, 187, 120, 0.3),
-      0 0 40px rgba(18, 90, 185, 0.2);
+
+.projects {
+  font-family: 'GmarketSansMedium';
+  margin-top: 250px;
+  padding: 0;
+  background: transparent;
+  position: relative;
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: conic-gradient(
+    from 45deg at 50% 50%,
+    #0a2cc6 0deg,   /* 기본 파란색 */
+    #061a52 90deg,  /* 더 어두운 파란색 */
+    #041237 180deg, /* 매우 어두운 파란색 */
+    #061a52 270deg, /* 다시 어두운 파란색 */
+    #0a2cc6 360deg  /* 기본 파란색 */
+  );
+  opacity: 0.4;
+  filter: blur(150px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.neon-head {
+  font-family: 'GmarketSansMedium';
+  color: #ffffff; 
+  text-shadow: 
+  0 0 3px #1b06a3,
+  0 0 6px #7e7c98,
+  0 0 15px #c5c5c6;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.custom-underline {
+  position: relative; 
+  display: inline-block; 
   }
 
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -15%; 
+  left: 35%;
+  right: 35%; 
+  border-bottom: 4px solid #c5c5c6; 
+  box-shadow: 0 0 10px #c5c5c6; 
+  }
+
+@keyframes neonFlicker-proj {
+  0%, 100% {
+    text-shadow:
+      0 0 3px currentColor,
+      0 0 6px currentColor,
+      0 0 20px currentColor;
+  }
+  40% {
+    text-shadow:
+      0 0 2px currentColor,
+      0 0 4px currentColor,
+      0 0 8px currentColor;
+  }
+  60% {
+    text-shadow:
+      0 0 2.5px currentColor,
+      0 0 5px currentColor,
+      0 0 8px currentColor;
+  }
+}
+
+.proj-title1 {
+  color: #73dcff; /* 네온 블루 */
+  font-family: 'GmarketSansMedium';
+  animation: neonFlicker-proj 2s infinite;
+}
+
+.proj-title2 {
+  color: #e08bb5; /* 네온 핑크 */
+  font-family: 'GmarketSansMedium';
+  animation: neonFlicker-proj 2s infinite;
+}
+
+.proj-title3 {
+  color: #73f373; /* 네온 그린 */
+  font-family: 'GmarketSansMedium';
+  animation: neonFlicker-proj 2s infinite;
+}
+
+.proj-title4 {
+  color: #c7ff0d; /* 네온 그린 */
+  font-family: 'GmarketSansMedium';
+  animation: neonFlicker-proj 2s infinite;
+}
 
 
+
+.carousel-arrow {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    z-index: 1000;
+    transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+  }
+  
+  .carousel-arrow:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+  }
+  
+  .prev-arrow {
+    left: 90px;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  
+  .prev-arrow:hover {
+    transform: translateX(-10px) translateY(-50%) scale(1.1);
+  }
+  
+  .next-arrow {
+    right: 720px;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  
+  .next-arrow:hover {
+    transform: translateX(10px) translateY(-50%) scale(1.1);
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 20px; 
+  }
+  
+  .title-container {
+    margin-bottom: 30px;
+  }
+  
+  .des-container {
+    margin-top: 10px; 
+    text-align: center;
+    /* font-size: 8px; */
+  }
+
+  .neon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    border: 2px solid #1d2020;
+    border-radius: 10px;
+    width: 120px;       /* 고정 너비 */
+    height: 100px;      /* 고정 높이 */
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 
+    8px #4561c8, 
+    0 0 16px #203992, 
+    0 0 24px #1215b7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .neon-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 
+    12px #1e5dbc, 
+    0 0 24px #19468e,
+    0 0 36px #192488;
+  }
+  
+  .neon-box span {
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  

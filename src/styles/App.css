@@ -1,8 +1,29 @@
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgb(69, 85, 233) 0deg,
+    rgb(34, 21, 132) 60deg,
+    rgb(128, 110, 200) 120deg,
+    rgb(49, 19, 146) 180deg,
+    rgba(61, 25, 180, 0.286) 240deg,
+    rgb(64, 52, 119) 300deg,
+    rgb(39, 24, 39) 360deg
+  );
+  opacity: 0.3;
+  filter: blur(200px);
+  z-index: -1;
+  font-family: 'GmarketSansMedium';
+} 
 
 body {
-  background-color: whitesmoke;
   font-family: 'Cafe24Ssurround';
-
+  background-color: rgb(0, 0, 0);
 
   cursor: url("data:image/svg+xml;utf8,\
   <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'>\
@@ -30,3 +51,5 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+

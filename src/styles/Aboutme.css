@@ -6,42 +6,36 @@
     font-style: normal;
 }
 
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background: rgb(0, 0, 0);
-    position: relative;
-    
-  }
+.aboutme {
+  margin: 0;
+  padding: 0;
+  background: transparent; 
+  position: relative;
+  padding-bottom: 100px; 
   
-  body::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: conic-gradient(
-      from 0deg at 50% 50%,
-      rgb(69, 85, 233) 0deg,
-      rgb(34, 21, 132) 60deg,
-      rgb(128, 110, 200) 120deg,
-      rgb(49, 19, 146) 180deg,
-      rgba(61, 25, 180, 0.286) 240deg,
-      rgb(149, 143, 175) 300deg,
-      rgb(39, 24, 39) 360deg
-    );
-    opacity: 0.3;
-    filter: blur(200px);
-    z-index: -1;
-    font-family: 'GmarketSansMedium';
-  }
+}
 
-
-
-
+.aboutme::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -700px;
+  width: 200%;
+  height: 1500px;
+  background: conic-gradient(
+    from 320deg at 50% 50%,
+    rgb(69, 85, 233) 0deg,
+    rgb(34, 21, 132) 60deg,
+    rgb(74, 44, 197) 120deg,
+    rgb(71, 10, 212) 200deg,
+    rgba(51, 209, 67, 0.998) 240deg,
+    rgb(28, 14, 131) 360deg
+  );
+  opacity: 0.3;
+  filter: blur(200px);
+  z-index: -1;
+  font-family: 'GmarketSansMedium';
+}
 
 .neon-head {
     font-family: 'GmarketSansMedium';
@@ -51,7 +45,21 @@ body {
     0 0 6px #7e7c98,
     0 0 15px #c5c5c6;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
-    
+}
+
+.custom-underline {
+  position: relative; 
+  display: inline-block; 
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -15%; 
+  left: 35%;
+  right: 35%; 
+  border-bottom: 4px solid #c5c5c6; 
+  box-shadow: 0 0 10px #c5c5c6; 
 }
 
 .aboutme-paragraph {
@@ -60,22 +68,6 @@ body {
     padding-top: 20px;
     
 }
-
-.custom-underline {
-    position: relative; 
-    display: inline-block; 
-}
-  
-.custom-underline::after {
-    content: "";
-    position: absolute;
-    bottom: -15%; 
-    left: 35%;
-    right: 35%; 
-    border-bottom: 4px solid #c5c5c6; 
-    box-shadow: 0 0 10px #c5c5c6; 
-}
-
 
 .education-container {
  margin-top:  70px;
