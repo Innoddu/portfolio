@@ -23,6 +23,15 @@
         0 0 15px #525084,
         0 0 20px #d2d2dd;
   transition: 0.3s;
+  margin: 0 8rem;
+  margin-bottom: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .neon-paragraph {
+      font-size: 1rem; 
+      margin-top: 20px;
+    }
   }
   
   @keyframes neonFlicker {
@@ -132,8 +141,6 @@
     0 0 10px rgb(126, 113, 185),
     0 0 20px rgb(12, 2, 32),
     0 0 30px rgb(137, 37, 244);
-  
-  
   }
 
 
