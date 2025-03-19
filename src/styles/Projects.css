@@ -24,11 +24,11 @@
   height: 100%;
   background: conic-gradient(
     from 45deg at 50% 50%,
-    #0a2cc6 0deg,   /* 기본 파란색 */
-    #061a52 90deg,  /* 더 어두운 파란색 */
-    #041237 180deg, /* 매우 어두운 파란색 */
-    #061a52 270deg, /* 다시 어두운 파란색 */
-    #0a2cc6 360deg  /* 기본 파란색 */
+    #0a2cc6 0deg,   
+    #061a52 90deg,  
+    #041237 180deg, 
+    #061a52 270deg, 
+    #0a2cc6 360deg  
   );
   opacity: 0.4;
   filter: blur(150px);
@@ -101,7 +101,7 @@
 }
 
 .proj-title4 {
-  color: #c7ff0d; /* 네온 그린 */
+  color: #c7ff0d; 
   font-family: 'GmarketSansMedium';
   animation: neonFlicker-proj 2s infinite;
 }
@@ -125,7 +125,8 @@
   }
   
   .prev-arrow {
-    left: 90px;
+    position: 'absolute';
+    left: -4.5rem;
     top: 60%;
     transform: translateY(-50%);
   }
@@ -135,7 +136,8 @@
   }
   
   .next-arrow {
-    right: 720px;
+    position: 'absolute';
+    right: -4.3rem;
     top: 60%;
     transform: translateY(-50%);
   }
@@ -158,9 +160,10 @@
   }
   
   .des-container {
-    margin-top: 10px; 
-    text-align: center;
-    /* font-size: 8px; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    align-items: center;
   }
 
   .neon-box {
@@ -171,8 +174,8 @@
     padding: 15px 15px;
     border: 2px solid #1d2020;
     border-radius: 10px;
-    width: 120px;       /* 고정 너비 */
-    height: 100px;      /* 고정 높이 */
+    width: 120px;       
+    height: 100px;      
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 
     8px #4561c8, 

@@ -49,7 +49,6 @@ export function Projects() {
                 <FontAwesomeIcon icon={faGithub} size="2x" color="#ffffff" />
                 <span>Github</span>
               </div>
-              {/* 다른 아이콘 추가 */}
             </div>
           )
         },
@@ -83,7 +82,7 @@ export function Projects() {
         {
           title: "CreateYourTodo",
           description: (
-            <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', marginTop: '10px', alignItems:"center", marginLeft: '100px' }}>
+            <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', marginTop: '10px', alignItems:"center", marginLeft: '50px' }}>
               <div className="neon-box">
                 <FontAwesomeIcon icon={faReact} size="2x" color="#61DBFB" />
                 <span>React</span>
@@ -139,7 +138,7 @@ export function Projects() {
         {
           title: "Application Tracker",
           description: (
-            <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', marginTop: '10px', alignItems:"center", marginLeft: '100px' }}>
+            <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', marginTop: '10px', alignItems:"center", marginLeft: '50px' }}>
               <div className="neon-box">
                 <img 
                     src="/icons/icons8-flask-64.png" 
@@ -200,21 +199,21 @@ export function Projects() {
             </Container>
             <Row className="text-center" style={{ alignItems: 'stretch' , marginTop: '70px', letterSpacing: '3px' }}>
                 <Col md={6} className="d-flex flex-column">
-                <button className="carousel-arrow prev-arrow" onClick={handlePrev}>
-                 ❮
-                </button>
-                <div style={{ width: "85%", marginTop: '250px', marginLeft: '150px',}}>
-                    <Carousel
-                    slides={slides}
-                    goToSlide={goToSlide}
-                    offsetRadius={5}
-                    showNavigation={false}
-                    animationConfig={config.gentle}
-                    />
+                <div className='carousel-container' style={{ position: 'relative',  width: "85%", marginTop: '220px', marginLeft: '100px',}}>
+                  <button className="carousel-arrow prev-arrow" onClick={handlePrev}>
+                  ❮
+                  </button>
+                      <Carousel
+                      slides={slides}
+                      goToSlide={goToSlide}
+                      offsetRadius={5}
+                      showNavigation={false}
+                      animationConfig={config.gentle}
+                      />
+                  <button className="carousel-arrow next-arrow" onClick={handleNext}>
+                    ❯
+                  </button>
                 </div>
-                <button className="carousel-arrow next-arrow" onClick={handleNext}>
-                  ❯
-                </button>
                 </Col>
             <Col md={5} className="d-flex flex-column">
             <Container className="description-container" style={{ marginTop: '0px', marginLeft: '60px'}}>
