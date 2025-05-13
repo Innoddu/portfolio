@@ -1,17 +1,16 @@
-
   .neon-text {
     color: rgba(12, 24, 66, 0.875);
     text-shadow: 
-      0 0 5px #f5f5dc,
+      /* 0 0 5px #f5f5dc, */
       0 0 10px #f5f5dc, 
       0 0 20px #d2b48c,
-      0 0 30px #d2b48c,
+      /* 0 0 30px #d2b48c,
       0 0 40px #d2b48c,
-      0 0 55px #d2b48c,
+      0 0 55px #d2b48c, */
       0 0 75px #d2b48c;
-    animation: neonFlicker 1.5s infinite alternate;
+    animation: neonFlicker 1.2s infinite alternate;
     transform: translateZ(0);
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     
   }
 
@@ -39,21 +38,21 @@
       text-shadow: 
         0 0 5px #f5f5dc,
         0 0 10px #f5f5dc,
-        0 0 20px #d2b48c,
-        0 0 30px #d2b48c,
-        0 0 40px #d2b48c,
-        0 0 55px #d2b48c,
-        0 0 75px #d2b48c;
+        /* 0 0 20px #d2b48c, */
+        /* 0 0 30px #d2b48c,
+        0 0 40px #d2b48c, */
+        /* 0 0 55px #d2b48c,
+        0 0 75px #d2b48c; */
     }
     50% {
       text-shadow: 
-        0 0 10px #f5f5dc,
-        0 0 20px #f5f5dc,
-        0 0 30px #d2b48c,
+        /* 0 0 10px #f5f5dc, */
+        /* 0 0 20px #f5f5dc, */
+        /* 0 0 30px #d2b48c, */
         0 0 40px #d2b48c,
         0 0 50px #d2b48c,
-        0 0 65px #d2b48c,
-        0 0 85px #d2b48c;
+        /* 0 0 65px #d2b48c,
+        0 0 85px #d2b48c; */
     }
     100% {
       text-shadow: 
@@ -129,7 +128,7 @@
     border-radius: 0.5rem;
     cursor: pointer;
     position: relative;
-    transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: color 0.15s ease, transform 0.15s ease;
   
     box-shadow:
     0 0 5px rgb(81, 87, 193),
@@ -148,6 +147,7 @@
       background-color: #000000;
       border-color:rgba(123, 0, 255, 0.3);
       color: #ffffff;
+      transform: translateY(-4px);
       box-shadow:
       0 0 5px rgb(47, 1, 107),
       0 0 10px rgb(92, 22, 183),

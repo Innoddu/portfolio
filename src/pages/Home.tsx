@@ -12,13 +12,22 @@ export function Home() {
                 Especially, I'm focusing on developing web and mobile application. 
                 I'm so excited to write code that creates what someone needs or even what I need. 
                 </p>
-                <Button
-                href="/Inho_Choi_Resume.pdf"
-                target="_blank"
-                className="custom-resume-btn mt-5"
-                >
-                Resume
-                </Button>
+                <Container className="btn-container d-flex justify-content-center align-items-center gap-5" >
+                    <Button
+                    href="/Inho_Choi_Resume.pdf"
+                    target="_blank"
+                    className="custom-resume-btn mt-5"
+                    >
+                    Resume
+                    </Button>
+                    <Button
+                    href="https://github.com/Innoddu"
+                    target="_blank"
+                    className="custom-resume-btn mt-5"
+                    >
+                    Github
+                    </Button>
+                </Container>
                 <div className="scroll-indicator">
                     <div className="mouse">
                         <div className="wheel"></div>

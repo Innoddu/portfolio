@@ -57,6 +57,12 @@ export const NavBar = () => {
         </Nav>
       </Navbar.Collapse>
     </Container>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler">
+      <span className="hamburger-line"></span>
+      <span className="hamburger-line"></span>
+      <span className="hamburger-line"></span>
+    </Navbar.Toggle>
+
   </Navbar>
 );
 }
